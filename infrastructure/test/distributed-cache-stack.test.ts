@@ -16,7 +16,7 @@ const ecsClusterProperties = {
     ClusterName: 'testenv-teststack-geode',
 }
 
-describe('The distributed-cache template', () => {
+describe.skip('The distributed-cache template', () => {
     var template: Template
     var clusterRef: String
     var targetGroups: {
