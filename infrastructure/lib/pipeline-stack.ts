@@ -49,7 +49,7 @@ export class PipelineStack extends Stack {
                 }),
             commands: [
                 'ls',
-                // 'cd infrastructure',
+                'cd infrastructure',
                 'npm ci',
                 'npm run build',
                 'npm run test',
