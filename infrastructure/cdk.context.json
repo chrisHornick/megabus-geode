@@ -1,0 +1,194 @@
+{
+  "vpc-provider:account=612587359370:filter.tag:Name=megabus-infrastructure-pipeline/dev/megabus-infrastructure/vpc:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0c02ba516f7bcaf24",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "ownerAccountId": "612587359370",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0e1eaa4a4c9f8560b",
+            "cidr": "10.0.96.0/19",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-088251915dca1f542"
+          },
+          {
+            "subnetId": "subnet-077f43e28a398f8b7",
+            "cidr": "10.0.128.0/19",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-0bec8d512c19d5f28"
+          },
+          {
+            "subnetId": "subnet-08280ef557e89b4dc",
+            "cidr": "10.0.160.0/19",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-07f89a94304a445ce"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-048ed5efed2518af2",
+            "cidr": "10.0.0.0/19",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-098763b3c1ef2f2a6"
+          },
+          {
+            "subnetId": "subnet-06b6401542e590050",
+            "cidr": "10.0.32.0/19",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-0f920b68bc8db93b4"
+          },
+          {
+            "subnetId": "subnet-04c2e86e8025dacbd",
+            "cidr": "10.0.64.0/19",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-0bb9d38380581a9ae"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=788013384398:filter.tag:Name=megabus-infrastructure-pipeline/qa/megabus-infrastructure/vpc:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-071637c477c41391a",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "ownerAccountId": "788013384398",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0f1521e849d04840e",
+            "cidr": "10.0.0.0/19",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0618264a8ca8472f3"
+          },
+          {
+            "subnetId": "subnet-0ad39baad51fc37db",
+            "cidr": "10.0.32.0/19",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-05093ca8fa484ee85"
+          },
+          {
+            "subnetId": "subnet-0bcece9d2a8c6da64",
+            "cidr": "10.0.64.0/19",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-0bcaee6c5e54cffc0"
+          }
+        ]
+      },
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0b27639d62b96fd54",
+            "cidr": "10.0.96.0/19",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0dfc817a98e4cb7b8"
+          },
+          {
+            "subnetId": "subnet-0e8b9da6064e98ec3",
+            "cidr": "10.0.128.0/19",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-093b0f6862e29a4c0"
+          },
+          {
+            "subnetId": "subnet-00d05931fe95777fe",
+            "cidr": "10.0.160.0/19",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-0cc9c6e290e96a2b7"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=047684648251:filter.tag:Name=megabus-infrastructure-pipeline/prod/megabus-infrastructure/vpc:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-04df2cfc9f74745b0",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "ownerAccountId": "047684648251",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0e2768a3b6edca531",
+            "cidr": "10.0.96.0/19",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0fabba31178c2daf6"
+          },
+          {
+            "subnetId": "subnet-0865962c672c63f93",
+            "cidr": "10.0.128.0/19",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-02059e84936e80703"
+          },
+          {
+            "subnetId": "subnet-0bbf2aa391832973c",
+            "cidr": "10.0.160.0/19",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-015f9619f77885d87"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0039b4704788b0d16",
+            "cidr": "10.0.0.0/19",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0663702f360c36a08"
+          },
+          {
+            "subnetId": "subnet-08f715f708cf1a651",
+            "cidr": "10.0.32.0/19",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-0b0c48719218dd4d2"
+          },
+          {
+            "subnetId": "subnet-008452ac6c9b2c6b9",
+            "cidr": "10.0.64.0/19",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-047a99ae41000d3a8"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=612587359370:region=us-east-1:securityGroupName=remote-access:vpcId=vpc-0c02ba516f7bcaf24": {
+    "securityGroupId": "sg-07c975d323744bf44",
+    "allowAllOutbound": false
+  },
+  "hosted-zone:account=612587359370:domainName=services.dev.megabus.internal:privateZone=true:region=us-east-1:vpcId=vpc-0c02ba516f7bcaf24": {
+    "Id": "/hostedzone/Z09767193LS6CMMQF5S0Q",
+    "Name": "services.dev.megabus.internal."
+  },
+  "security-group:account=788013384398:region=us-east-1:securityGroupName=remote-access:vpcId=vpc-071637c477c41391a": {
+    "securityGroupId": "sg-09578884f277a2ccf",
+    "allowAllOutbound": false
+  },
+  "hosted-zone:account=788013384398:domainName=services.qa.megabus.internal:privateZone=true:region=us-east-1:vpcId=vpc-071637c477c41391a": {
+    "Id": "/hostedzone/Z05449981TVPQBKQYEX5",
+    "Name": "services.qa.megabus.internal."
+  },
+  "security-group:account=047684648251:region=us-east-1:securityGroupName=remote-access:vpcId=vpc-04df2cfc9f74745b0": {
+    "securityGroupId": "sg-05e6ae4acb01bb5fb",
+    "allowAllOutbound": false
+  },
+  "hosted-zone:account=047684648251:domainName=services.prod.megabus.internal:privateZone=true:region=us-east-1:vpcId=vpc-04df2cfc9f74745b0": {
+    "Id": "/hostedzone/Z10209452KMUBFR8DYKT7",
+    "Name": "services.prod.megabus.internal."
+  }
+}

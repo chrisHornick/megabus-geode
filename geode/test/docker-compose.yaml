@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  locator1:
+    build: ../locator
+    mem_limit: 2048m
+    environment:
+      - LOCATOR=locator1
+      - LOG_LEVEL=config
+    expose:
+      - 10334
+      - 1099
+      - 7070
+      - 1024
+    ports:
+      - 7070:7070
+  locatorn:
+    build: ../locator
+    mem_limit: 2048m
+    environment:
+      - LOCATOR=locator1
+      - LOG_LEVEL=config
+    expose:
+      - 10334
+      - 1099
+      - 7070
+      - 1024
+    ports:
+      - 7070  
+  pulse:
+    build: ../pulse
+    mem_limit: 2048m
+    environment:
+      - LOCATOR=locator1
+      - LOG_LEVEL=config
+    expose:
+      - 8080
+    ports:
+      - 8080
+  engine:
+    image: engine
+    environment:
+      - 'jdbc_url=jdbc:mysql:replication://$${jdbc.host}:$${jdbc.port}/$${jdbc.databaseName}?autoReconnect=false&failOverReadOnly=true&autoReconnectForPools=true&roundRobinLoadBalance=false&logSlowQueries=true&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8&useLegacyDatetimeCode=false&autoSlowLog=false'
+    env_file:
+      - engine.env      
+    ports:
+      - 8080:8080
+      
