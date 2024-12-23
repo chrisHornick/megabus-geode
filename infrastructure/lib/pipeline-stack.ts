@@ -40,14 +40,13 @@ const PROD_PROPERTIES = {
 export class PipelineStack extends Stack {
     constructor(scope: Construct, id: string, props?: StackProps) {
         super(scope, id, props)
-        const connection = CodePipelineSource.connection('coach-usa/megabus-geode', 'main', {
-            connectionArn: Fn.importValue('coachusa-bitbucket-codestar-arn')
-        })
         const pipeline = new pipelines.CodePipeline(this, 'Pipeline', {
             crossAccountKeys: true,
             pipelineName: 'megabus-geode',
             synth: new pipelines.ShellStep('Synth', {
-                input: connection,
+                input: CodePipelineSource.connection('coach-usa/megabus-geode', 'main', {
+                    connectionArn: Fn.importValue('coachusa-bitbucket-codestar-arn')
+                }),
             commands: [
                 'ls',
                 'cd infrastructure',
