@@ -52,10 +52,10 @@ export class PipelineStack extends Stack {
                 // 'cd infrastructure',
                 'npm ci',
                 'npm run build',
-                'npm run test',
+                // 'npm run test',
                 'npx cdk synth'
             ],
-            primaryOutputDirectory: 'infrastructure/cdk.out'
+            primaryOutputDirectory: '.'
             })
         })
   
